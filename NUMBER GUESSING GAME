@@ -1,0 +1,31 @@
+'''THIS PROJECT IS BASICALLY CONCENTRATED ON BEGINNER LEVEL PYTHONISTA
+
+
+
+
+import random as r                                            #importing random module 
+sn = r.randint(1, 10)                                         #using randint method from random to take a secret number between 1-10, we use randint coz'we play with integer values in this program
+print("GUESS THE NUMBER BETWEEN THE RANGE 1 and 10")
+print("3 GUESSES ARE GIVEN")                                  #The number of guesses given to guess the number is ---3
+for i in range(3):                                            
+    user = int(input(""))
+    if user == sn:
+        print("YOU WIN")
+        print("NUMBER OF GUESSES TAKEN IS %d", i)
+        break
+    elif user > sn:
+        print("GUESS IS TO HIGH")
+    elif user < sn:
+        print("GUESS IS TO LOW")
+    else:
+        print("try again")
+else:                                                         #We use else clause in for loop, if the value fails the condition of the loop
+    print("BETTER LUCK NEXT TIME")
+    print("GUESS NUMBER IS=", sn)
+    
+    
+    
+    
+    
+    
+    
